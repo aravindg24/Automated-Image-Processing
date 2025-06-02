@@ -5,9 +5,9 @@
         "Items": [
             {
                 "Id": "S3-Image-Proc-Origin",
-                "DomainName": "image-proc-processed-my-tp-proj.s3.us-east-1.amazonaws.com",
+                "DomainName": "<YOUR_PROCESSED_S3_BUCKET_NAME>.s3.<YOUR_REGION>.amazonaws.com",
                 "S3OriginConfig": {
-                    "OriginAccessIdentity": "origin-access-identity/cloudfront/E3PSBMWRNORKP3"
+                    "OriginAccessIdentity": "origin-access-identity/cloudfront/<YOUR_CLOUDFRONT_OAI_ID>"
                 }
             }
         ]
