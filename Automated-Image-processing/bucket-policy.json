@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCloudFrontOAI",
+            "Effect": "Allow",
+            "Principal": {
+                "CanonicalUser": "9ba45c8709fdef66193bd308aecedfe49a4a0218a1398465c1d645ee7d34b42c4d4890aae945649e313aa3c2e7b50588"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::image-proc-processed-my-tp-proj/*"
+        }
+    ]
+}
