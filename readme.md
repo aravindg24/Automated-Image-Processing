@@ -1,5 +1,47 @@
 # AWS Image Processing Pipeline
 
+## About
+
+This project is a fully automated, serverless image processing pipeline built on AWS infrastructure. It demonstrates how to build a scalable, cost-effective solution for automatic image transformation and delivery using cloud-native services.
+
+### What It Does
+
+When you upload an image to the designated S3 bucket, the system automatically:
+- Detects the upload event in real-time
+- Generates optimized thumbnails (200x200 pixels)
+- Stores processed images separately for efficient access
+- Records metadata for tracking and auditing
+- Delivers images through a global CDN for fast access worldwide
+
+### Key Features
+
+- **Serverless Architecture**: No servers to manage - automatically scales with demand
+- **Event-Driven Processing**: Images are processed immediately upon upload
+- **Automated Workflow**: End-to-end automation from upload to delivery
+- **Metadata Tracking**: Complete audit trail of all processed images in DynamoDB
+- **CDN Integration**: Fast global content delivery via CloudFront
+- **Secure Access**: Implements best practices for S3 security with Origin Access Identity
+- **Cost-Effective**: Pay only for what you use with AWS serverless pricing
+
+### Use Cases
+
+- **Web Applications**: Automatically generate thumbnails for user-uploaded profile pictures or gallery images
+- **E-commerce**: Process product images at scale for catalog listings
+- **Content Management**: Automate image optimization for blogs and media sites
+- **Mobile Apps**: Backend processing for photo-sharing applications
+- **Learning**: Understand serverless architecture and AWS service integration
+
+### Technologies Used
+
+- **AWS Lambda**: Serverless compute for image processing
+- **Amazon S3**: Object storage for original and processed images
+- **Amazon DynamoDB**: NoSQL database for metadata storage
+- **Amazon CloudFront**: CDN for global content delivery
+- **Python 3.9**: Lambda function runtime
+- **Pillow (PIL)**: Python imaging library for thumbnail generation
+
+---
+
 This project implements a serverless image processing pipeline using AWS services including S3, Lambda, DynamoDB, and CloudFront. The system automatically processes uploaded images, creates thumbnails, and delivers them through a CDN.
 
 ## Architecture Overview
