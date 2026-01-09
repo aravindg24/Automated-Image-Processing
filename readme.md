@@ -40,7 +40,7 @@ When you upload an image to the designated S3 bucket, the system automatically:
 - **Python 3.9**: Lambda function runtime
 - **Pillow (PIL)**: Python imaging library for thumbnail generation
 
----
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Architecture Overview
 
