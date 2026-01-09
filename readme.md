@@ -42,8 +42,6 @@ When you upload an image to the designated S3 bucket, the system automatically:
 
 ---
 
-This project implements a serverless image processing pipeline using AWS services including S3, Lambda, DynamoDB, and CloudFront. The system automatically processes uploaded images, creates thumbnails, and delivers them through a CDN.
-
 ## Architecture Overview
 
 1. **Upload Bucket**: Images are uploaded to an S3 bucket (`image-proc-uploads-my-tp-proj`)
